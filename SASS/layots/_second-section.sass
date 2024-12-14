@@ -1,0 +1,57 @@
+.second-section
+    margin-bottom: 9.6rem
+    &__box 
+        display: flex
+        gap: 4rem
+        justify-content: space-between
+
+    &__text
+        max-width: 60%
+    &__imeges 
+        max-width: 40%
+
+    &__title
+        margin-bottom: 4.2rem
+        @media screen and (max-width: $bp-small-desktop)
+            margin-bottom: 2rem
+        @media screen and (max-width: $bp-small-desktop) 
+            margin-bottom: 1rem
+    &__text-1
+        margin-bottom: 4.2rem
+        @media screen and (max-width: $bp-small-desktop)
+            margin-bottom: 2rem
+        @media screen and (max-width: $bp-small-desktop) 
+            margin-bottom: 1rem
+    &__text-2
+        width: 34rem
+    &__imeges 
+        display: flex
+        justify-content: center
+        align-items: center
+    &__photo-bakery 
+        display: block
+        width: 100%
+        max-width: 40rem
+        height: auto
+        border-radius: 400px 400px 0 0
+
+    @media screen and (max-width: $bp-tablet) 
+        &__box 
+            flex-direction: column
+        &__text
+            width: 100% 
+            max-width: none 
+        &__title
+            text-align: center
+            margin-bottom: 1.6rem
+        &__text-1
+            text-align: center
+            margin-bottom: 1.6rem
+        &__text-2
+            width: auto
+            text-align: center 
+        &__imeges 
+            display: none
+        
+    
+

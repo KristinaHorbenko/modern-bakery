@@ -1,0 +1,58 @@
+.third-section
+    margin-bottom: 9.6rem
+    &__titel
+        position: relative
+        &::before,  &::after 
+            width: 28rem
+            border: 2px solid $color-light-gray
+            position: absolute
+            bottom: 2.4rem
+            content: ''
+            @media screen and (max-width: $bp-small-desktop)
+                width: 24rem
+            @media screen and (max-width: $bp-big-tablet)
+                content: none // Убираем содержимое
+        &::before
+            left: 0
+        &::after 
+            right: 0
+            @media screen and (max-width: $bp-tablet) 
+                content: none // Убираем отображение псевдоэлементов
+                border: none // Убираем рамку
+                width: 0 // Обнуляем ширину
+    &__cooks
+        display: flex
+        gap: 3rem
+        justify-content: space-between
+        @media screen and (max-width: $bp-tablet)
+            flex-direction: column
+    &__about_1, &__about_2
+        flex: 1
+        max-width: calc(50% - 1.5rem)
+        @media screen and (max-width: $bp-tablet) 
+            flex: none  // Убираем распределение пространства
+            max-width: 100% // Элемент занимает всю ширину родителя
+    &__about_1
+        @media screen and (max-width: $bp-tablet) 
+            margin-bottom: 1.6rem
+
+    &__about
+        display: flex
+    &__photo-chef
+        max-width: 24rem
+        height: 39rem
+        border-radius: .4rem .4rem .4rem 20rem 
+        box-shadow: -1.6rem 1.6rem 0 0 $color-pure-white, -1.6rem 1.6rem 0 .2rem $color-warm-beige
+        @media screen and (max-width: $bp-big-tablet)
+            max-width: 18rem
+            height: 33rem
+            box-shadow: -1.07rem 1.07rem 0 0 $color-pure-white, -1.07rem 1.07rem 0 .13rem $color-warm-beige
+        @media screen and (max-width: $bp-mobile) 
+            max-width: 14rem
+            height: 22rem
+            box-shadow: -.6rem .6rem 0 0 $color-pure-white, -.6rem .6rem 0 .1rem $color-warm-beige
+    &__text
+        width: 33.4rem
+        margin-left: 3rem
+        @media screen and (max-width: $bp-mobile) 
+            margin-left: 1.5rem

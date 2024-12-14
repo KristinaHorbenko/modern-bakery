@@ -1,0 +1,12 @@
+.main-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 73.6rem;
+  background: linear-gradient(102.76deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.6) 58.46%, rgba(18, 18, 17, 0) 90.36%), url(../img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=main-section.css.map */

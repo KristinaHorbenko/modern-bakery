@@ -1,0 +1,58 @@
+.modal-window
+    position: fixed
+    z-index: 20
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 20px
+    transition: opacity 0.3s, visibility 0.3s
+    &__container
+        position: relative
+        width: 90%
+        max-width: 88rem
+        height: 100%
+        max-height: 80vh
+        padding: 64px 48px
+        background-color: $color-pure-white
+        border-radius: 32px
+        overflow-y: auto
+        @media screen and (max-width:  $bp-mobile) 
+            width: 100%
+            padding: 64px 28px
+    &__close
+        position: absolute
+        top: 1rem
+        right: 4rem
+        background: none
+        border: none
+        font-size: 4rem
+        font-weight: 100
+        cursor: pointer
+        padding: 0
+    &__form-field
+        margin-bottom: 3.6rem
+    &__btn
+        display: block
+        margin: 0 auto
+        margin-bottom: 1.6rem
+    &__text
+        font-size: 1.8rem
+        font-weight: 400
+        text-align: center
+        color: $color-dark-green
+        margin-bottom: 6rem
+        @media screen and (max-width: $bp-big-tablet)
+            font-size: 1.6rem
+            margin-bottom: 4rem
+        @media screen and (max-width: $bp-tablet)
+            font-size: 1.4rem
+            margin-bottom: 2rem
+ 
+   
+.hidden 
+    display: none
+

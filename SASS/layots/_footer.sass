@@ -1,0 +1,64 @@
+.footer
+    position: relative
+    background-color: $color-dark-brown
+    background-image:  url(../img/image-1564.png)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    &__bread-1
+        position: absolute
+        bottom: 0
+        left: 0
+    &__bread-2
+        position: absolute
+        bottom: 0
+        left: 70%
+    &__box
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-gap: 4rem
+        margin: 0 auto
+        padding-top: 3.2rem
+        z-index: 5
+        @media screen and (max-width: $bp-tablet) 
+            display: flex
+            flex-direction: column
+            grid-gap: 0
+            text-align: center
+    &__logo
+        flex-grow: 1
+        @media screen and (max-width: $bp-tablet) 
+            margin: 0 auto
+            margin-bottom: 3.2rem
+    &__navigation li
+        font-size: 1.8rem
+        font-weight: 400
+        line-height: 2.7rem
+        color: $color-pure-white
+        margin-bottom: 1.6rem
+    &__contacts li
+        font-size: 1.6rem
+        font-weight: 300
+        line-height: 2.4rem
+        margin-bottom: 1.6rem
+    &__contacts a
+        text-decoration: none
+        color: $color-pure-white
+    &__social-networks
+        display: flex
+        @media screen and (max-width: $bp-tablet) 
+            justify-content: center
+    &__icon
+       margin-right: 2.2rem 
+    &__legal-privacy
+        font-size: 1.6rem
+        font-weight: 300
+        line-height: 2.4rem
+        margin-bottom: 1.6rem
+        color: $color-pure-white
+    &__legal-copyright
+        font-size: 1.4rem
+        font-weight: 400
+        line-height: 2.1rem
+        color: $color-warm-beige 
+    
